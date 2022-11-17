@@ -1,0 +1,110 @@
+site_name: Algorithm Notes 
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.link
+    - navigation.indexes
+    # - navigation.expand
+    # - navigation.sections
+  font:
+    text: 'Noto Sans'
+    code: 'Source Code Pro'
+  icon:
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+    
+markdown_extensions:
+  - meta
+  - pymdownx.arithmatex
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: "#"
+      toc_depth: 3
+  - footnotes
+  - tables
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_javascript:
+  - javascripts/mathjax-config.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css
+
+plugins:
+  - search
+  - tags
+  - autorefs
+  # - add-number
+
+nav:
+  - 主页: index.md
+  - 算法:
+    - 哈希表: 
+      - 概览: hash_table/index.md
+      - TwoSum: hash_table/1_two_sum.md
+    - 二分查找: 
+      - 概览: binary_search/index.md
+    - 双指针: 
+      - 概览: two_pointers/index.md
+    - 滑窗法:
+      - 概览: sliding_window/index.md
+    - 排序:
+      - 概览: sorting/index.md
+    - 动态规划:
+      - 概览: dynamic_programming/index.md
+      - 背包问题: dynamic_programming/knapsack_problem.md
+      - 股票问题: dynamic_programming/buy_and_sell_stock.md
+      - 打家劫舍: dynamic_programming/house_robber.md
+      - 子序列问题: dynamic_programming/subsequence.md
+      - 子串问题: dynamic_programming/substring.md
+    - 分治法:
+      - 概览: divide_and_conquer/index.md
+    - 贪婪法:
+      - 概览: greedy/index.md
+    - 回溯法: 
+      - 概览: backtracking/index.md
+    - 其他:
+      - 概览: others/index.md
+  - 数据结构:
+    - 链表:
+      - 概览: linked_list/index.md
+      - 节点删除: linked_list/19_remove-nth-node-from-end-of-list.md
+    - 二叉树:
+      - 概览: binary_tree/index.md
+    - 栈:
+      - 概览: stack/index.md
+    - 并查集:
+      - 概览: union_find/index.md
+  - 关于: about.md
+
