@@ -702,13 +702,6 @@
         
           <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    题目
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
     解析
   </a>
   
@@ -728,14 +721,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     题目
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     解析
   </a>
   
@@ -755,14 +748,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     题目
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     解析
   </a>
   
@@ -1043,6 +1036,8 @@
         
           
         
+          
+        
       
       
         
@@ -1072,8 +1067,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linked_list/19_remove-nth-node-from-end-of-list/" class="md-nav__link">
-        节点删除
+      <a href="../../linked_list/dummy_node/" class="md-nav__link">
+        代理节点法
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linked_list/dual_pointers/" class="md-nav__link">
+        双指针
       </a>
     </li>
   
@@ -1105,12 +1114,18 @@
             
           
         
+          
+        
       
       
         
         
         <div class="md-nav__link md-nav__link--index ">
           <a href="../../binary_tree/">二叉树</a>
+          
+            <label for="__nav_3_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
           
         </div>
       
@@ -1122,6 +1137,20 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../binary_tree/traversal/" class="md-nav__link">
+        遍历
+      </a>
+    </li>
+  
+
             
           
         </ul>
@@ -1274,13 +1303,6 @@
         
           <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    题目
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
     解析
   </a>
   
@@ -1300,14 +1322,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     题目
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     解析
   </a>
   
@@ -1327,14 +1349,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     题目
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     解析
   </a>
   
@@ -1361,9 +1383,10 @@
   <h1>子序列问题</h1>
 
 <h2 id="53_">53_最大子数组和<a class="headerlink" href="#53_" title="Permanent link">#</a></h2>
-<h3 id="_1">题目<a class="headerlink" href="#_1" title="Permanent link">#</a></h3>
-<p>给你一个整数数组 nums ，请你找出一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
+<blockquote>
+<p>题目: 给你一个整数数组 nums ，请你找出一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
 注: 子数组是数组中的一个连续部分。</p>
+</blockquote>
 <p>示例:
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -1372,7 +1395,7 @@
 解释：连续子数组 [4,-1,2,1] 的和最大，为 6。
 </code></pre></div>
 </td></tr></table></p>
-<h3 id="_2">解析<a class="headerlink" href="#_2" title="Permanent link">#</a></h3>
+<h3 id="_1">解析<a class="headerlink" href="#_1" title="Permanent link">#</a></h3>
 <ul>
 <li><strong>定义子问题</strong>: dp[i]: 表示以 nums[i] <strong>结尾</strong>的连续子数组最大和</li>
 <li><strong>状态转移方程</strong>: 分两种情况讨论,</li>
@@ -1472,7 +1495,7 @@ nums[i] &, & dp[i - 1] < 0.
 </div>
 </div>
 <h2 id="152_">152_乘积最大子数组<a class="headerlink" href="#152_" title="Permanent link">#</a></h2>
-<h3 id="_3">题目<a class="headerlink" href="#_3" title="Permanent link">#</a></h3>
+<h3 id="_2">题目<a class="headerlink" href="#_2" title="Permanent link">#</a></h3>
 <p>给你一个整数数组 nums，请你找出数组中乘积最大的非空连续子数组(该子数组中至少包含一个数字)，并返回该子数组所对应的乘积。</p>
 <p>示例:
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -1482,7 +1505,7 @@ nums[i] &, & dp[i - 1] < 0.
 解释: 子数组 [2,3] 有最大乘积 6。
 </code></pre></div>
 </td></tr></table></p>
-<h3 id="_4">解析<a class="headerlink" href="#_4" title="Permanent link">#</a></h3>
+<h3 id="_3">解析<a class="headerlink" href="#_3" title="Permanent link">#</a></h3>
 <p>基本的解题思路同 <a href="#53_">53_最大子数组和</a>, 但需要考虑 nums[i] 中分别为正数和负数的情形。
 1. 若 nums[i] &lt; 0, 且其前某段连续子数组之积也为负数，则负的绝对值越大，则其积越大;
 2. 若 nums[i] &gt; 0, 则期望其前某段连续子数组之积也为正数，正得越大，其积越大。</p>
@@ -1516,7 +1539,7 @@ nums[i] &, & dp[i - 1] < 0.
 </code></pre></div>
 </td></tr></table>
 <h2 id="300_">300_最长递增子序列<a class="headerlink" href="#300_" title="Permanent link">#</a></h2>
-<h3 id="_5">题目<a class="headerlink" href="#_5" title="Permanent link">#</a></h3>
+<h3 id="_4">题目<a class="headerlink" href="#_4" title="Permanent link">#</a></h3>
 <p>给你一个整数数组 nums ，找到其中最长严格递增子序列的长度。</p>
 <p>说明: 子序列是由数组派生而来的序列，删除（或不删除）数组中的元素而不改变其余元素的顺序。例如，[3,6,2,7] 是数组 [0,3,1,6,2,2,7] 的子序列。</p>
 <p>示例:
@@ -1527,8 +1550,8 @@ nums[i] &, & dp[i - 1] < 0.
 解释：最长递增子序列是 [2,3,7,101]，因此长度为 4 。
 </code></pre></div>
 </td></tr></table></p>
-<h3 id="_6">解析<a class="headerlink" href="#_6" title="Permanent link">#</a></h3>
-<h4 id="_7">基础解法：动态规划<a class="headerlink" href="#_7" title="Permanent link">#</a></h4>
+<h3 id="_5">解析<a class="headerlink" href="#_5" title="Permanent link">#</a></h3>
+<h4 id="_6">基础解法：动态规划<a class="headerlink" href="#_6" title="Permanent link">#</a></h4>
 <ul>
 <li><strong>状态定义</strong>: dp[i] 表示以 nums[i] 结尾的最长上升子序列的长度;</li>
 <li><strong>状态转移方程</strong>: 当 <span class="arithmatex"><span class="MathJax_Preview">nums[i] &gt; nums[j]</span><script type="math/tex">nums[i] > nums[j]</script></span> 时, <span class="arithmatex"><span class="MathJax_Preview">dp[i] = \max(dp[j] + 1, dp[i]), j \in [0, i)</span><script type="math/tex">dp[i] = \max(dp[j] + 1, dp[i]), j \in [0, i)</script></span>, 其中 <span class="arithmatex"><span class="MathJax_Preview">j&lt;i</span><script type="math/tex">j<i</script></span>; 也即是说, <font color=blue>需 <span class="arithmatex"><span class="MathJax_Preview">nums[i] &gt; nums[j]</span><script type="math/tex">nums[i] > nums[j]</script></span> 时, 才能将 <span class="arithmatex"><span class="MathJax_Preview">nums[i]</span><script type="math/tex">nums[i]</script></span> 放到 <span class="arithmatex"><span class="MathJax_Preview">nums[0...j]</span><script type="math/tex">nums[0...j]</script></span> 后面形成上升子序列</font>;</li>
@@ -1561,7 +1584,7 @@ nums[i] &, & dp[i - 1] < 0.
     <span class="k">return</span> <span class="n">result</span>
 </code></pre></div>
 </td></tr></table>
-<h4 id="_8">晋级解法: 动态规划 + 二分查找<a class="headerlink" href="#_8" title="Permanent link">#</a></h4>
+<h4 id="_7">晋级解法: 动态规划 + 二分查找<a class="headerlink" href="#_7" title="Permanent link">#</a></h4>
 <p><strong>核心思想</strong>: 为了找到 <span class="arithmatex"><span class="MathJax_Preview">nums[i]</span><script type="math/tex">nums[i]</script></span> 之前的上升子序列, 可以定义一个<strong>升序</strong>数组 ascend_arr 存放上升子序列, 越小的数字越往前放，这样后面就会有更多的数字可以加入该数组中。 具体操作是: 如果 nums[i] 比 ascend_arr[-1] 大, 则追加至 ascend_arr 末尾; 负责覆盖第一个刚好不小于 nums[i] 的数字。基本的</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
