@@ -1,0 +1,8 @@
+.md-grid {
+    max-width: 1600px;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
